@@ -8,9 +8,9 @@ variable "role_ids" {
   description = "Role IDs to assign"
 }
 
-variable "project_id" {
+variable "domain_id" {
   type        = string
-  description = "ID of the project"
+  description = "ID of the domain we are in"
 }
 
 variable "ak_sk" {

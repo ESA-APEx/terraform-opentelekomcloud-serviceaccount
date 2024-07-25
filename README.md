@@ -33,8 +33,8 @@ Module to help create ServiceAccount and associated resources on OpenTelekomClou
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_domain_id"></a> [domain\_id](#input\_domain\_id) | ID of the domain we are in | `string` | n/a | yes |
 | <a name="input_name"></a> [name](#input\_name) | Group AND user name | `string` | n/a | yes |
-| <a name="input_project_id"></a> [project\_id](#input\_project\_id) | ID of the project | `string` | n/a | yes |
 | <a name="input_role_ids"></a> [role\_ids](#input\_role\_ids) | Role IDs to assign | `list(string)` | n/a | yes |
 | <a name="input_ak_sk"></a> [ak\_sk](#input\_ak\_sk) | Whether to generate access key and secret key | `bool` | `false` | no |
 | <a name="input_password"></a> [password](#input\_password) | Whether to set a password for the account | `bool` | `false` | no |
