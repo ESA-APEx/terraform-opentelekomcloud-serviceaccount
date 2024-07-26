@@ -4,5 +4,6 @@ resource "opentelekomcloud_identity_role_assignment_v3" "rules" {
   group_id = opentelekomcloud_identity_group_v3.group.id
   role_id  = each.key
 
-  domain_id = var.domain_id
+  domain_id    = var.domain_id
+  all_projects = true
 }
