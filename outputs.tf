@@ -1,3 +1,8 @@
+output "id" {
+  value       = opentelekomcloud_identity_user_v3.user.id
+  description = "The ID of the service account"
+}
+
 output "access_key" {
   value       = length(opentelekomcloud_identity_credential_v3.ak_sk) > 0 ? opentelekomcloud_identity_credential_v3.ak_sk[0].access : null
   description = "Access Key if ak_sk is enabled for the module"
