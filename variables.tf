@@ -3,14 +3,15 @@ variable "name" {
   description = "Group AND user name"
 }
 
-variable "role_ids" {
-  type        = list(string)
-  description = "Role IDs to assign"
-}
-
 variable "domain_id" {
   type        = string
   description = "ID of the domain we are in"
+}
+
+variable "role_ids" {
+  type        = list(string)
+  description = "Role IDs to assign"
+  default     = []
 }
 
 variable "ak_sk" {
