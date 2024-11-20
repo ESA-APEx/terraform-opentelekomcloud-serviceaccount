@@ -9,4 +9,5 @@ resource "opentelekomcloud_identity_user_v3" "user" {
 
   access_type = "programmatic"
   password    = var.password ? random_password.user_password[0].result : null
+  pwd_reset   = var.password ? false : true
 }
